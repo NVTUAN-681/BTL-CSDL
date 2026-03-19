@@ -1,0 +1,19 @@
+git init
+git remote add origin <url> : kết nối với git
+
+
+4 câu lệnh đẩy:
+git add <file muốn đẩy lên> / git add . (đẩy hết lên)
+git commit -m '..': lưu tên lịch sử (.. = tên)
+git push origin Tên_Nhánh
+
+
+----------
+git init
+git remote add origin ...
+git fetch origin
+git branch tên_nhánh_mới
+git checkout tên_nhánh_mới
+git add 
+git commit
+git push origin  
