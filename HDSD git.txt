@@ -8,12 +8,22 @@ git commit -m '..': lưu tên lịch sử (.. = tên)
 git push origin Tên_Nhánh
 
 
-----------
+----------quy trình lần đăng nhập đầu tiên
+mở git bash
+gõ lệnh
 git init
 git remote add origin ...
 git fetch origin
-git branch tên_nhánh_mới
-git checkout tên_nhánh_mới
-git add 
-git commit
-git push origin  
+git pull origin/main
+
+
+--quy trình sau lần đăng nhập đầu tiên
+mở git bash
+gõ lệnh
+git pull
+- chỉnh sửa file như thường
+git add .
+git commit -m'...'
+git push origin main
+
+ 
