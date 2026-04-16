@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="InventoryProcess" name="Quy trình Quản lý Kho">
+    <mxGraphModel dx="744" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="main_flow" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;fontStyle=1;fontSize=16;" value="QUY TRÌNH QUẢN LÝ KHO &amp; BÁN HÀNG" vertex="1">
+          <mxGeometry height="60" width="320" x="320" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="step1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="📦 BƯỚC 1: XÁC ĐỊNH &amp; ĐẶT HÀNG" vertex="1">
+          <mxGeometry height="100" width="220" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="step1_1" parent="step1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- Kiểm tra tồn kho&#xa;- Tạo đơn đặt hàng (nếu thiếu)&#xa;- Thêm chi tiết NVL" vertex="1">
+          <mxGeometry height="74" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="step2" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="🚚 BƯỚC 2: NHẬN HÀNG &amp; NHẬP KHO" vertex="1">
+          <mxGeometry height="100" width="220" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="step2_1" parent="step2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- Nhận hàng từ NCC&#xa;- Tạo phiếu nhập kho&#xa;- Cập nhật số lượng tồn" vertex="1">
+          <mxGeometry height="74" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="step3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="🏠 BƯỚC 3: QUẢN LÝ TỒN KHO" vertex="1">
+          <mxGeometry height="80" width="200" x="380" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="step3_desc" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontStyle=2" value="Theo dõi kho | Cập nhật Xuất-Nhập | Cảnh báo tồn thấp" vertex="1">
+          <mxGeometry height="30" width="290" x="335" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="step4" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="🛒 BƯỚC 4: TIẾP NHẬN ĐƠN" vertex="1">
+          <mxGeometry height="100" width="220" x="700" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="step4_1" parent="step4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- Nhập thông tin khách&#xa;- Tạo đơn xuất hàng&#xa;- Thêm chi tiết sản phẩm" vertex="1">
+          <mxGeometry height="74" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="step5" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="⚖️ BƯỚC 5: KIỂM TRA &amp; XỬ LÝ" vertex="1">
+          <mxGeometry height="100" width="220" x="700" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="step5_1" parent="step5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- Kiểm tra tồn kho&#xa;- Xác nhận đơn (Nếu đủ)&#xa;- Xử lý bổ sung (Nếu thiếu)" vertex="1">
+          <mxGeometry height="74" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="step6" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" value="📤 BƯỚC 6: XUẤT KHO" vertex="1">
+          <mxGeometry height="100" width="220" x="700" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="step6_1" parent="step6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- Tạo phiếu xuất kho&#xa;- Ghi nhận thông tin xuất&#xa;- Cập nhật giảm tồn kho" vertex="1">
+          <mxGeometry height="74" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="step7" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" value="🚛 BƯỚC 7: VẬN CHUYỂN" vertex="1">
+          <mxGeometry height="100" width="220" x="450" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="step7_1" parent="step7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- Tạo thông tin vận chuyển&#xa;- Theo dõi trạng thái&#xa;- Cập nhật tiến trình" vertex="1">
+          <mxGeometry height="74" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="step8" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" value="✅ BƯỚC 8: HOÀN TẤT" vertex="1">
+          <mxGeometry height="100" width="220" x="150" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="step8_1" parent="step8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="- Giao hàng thành công&#xa;- Cập nhật trạng thái đơn&#xa;- Lưu dữ liệu báo cáo" vertex="1">
+          <mxGeometry height="74" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="line1" edge="1" parent="1" source="step1" target="step2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line2" edge="1" parent="1" source="step2" target="step3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line3" edge="1" parent="1" source="step4" target="step5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line4" edge="1" parent="1" source="step5" target="step3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line5" edge="1" parent="1" source="step3" target="step6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line6" edge="1" parent="1" source="step6" target="step7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="line7" edge="1" parent="1" source="step7" target="step8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="summary" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontStyle=1" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;TÓM TẮT LUỒNG: Nhập hàng → Tồn kho → Đơn khách → Xuất kho → Vận chuyển → Hoàn tất&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="500" x="230" y="660" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
